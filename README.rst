@@ -1,6 +1,6 @@
 qi-template
 ===========
-A template for a Racket project using the Qi language.
+A template for a Racket project using the `Qi language <https://docs.racket-lang.org/qi/index.html>`_.
 
 This template includes a short interactive tutorial to get you started.
 
