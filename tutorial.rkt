@@ -1,5 +1,10 @@
 #lang racket
 
+;; Welcome to the interactive Qi tutorial!
+;;
+;; Qi is a general-purpose functional language, but it isn't a #lang,
+;; it's just a library. You can use it in any module just by:
+
 (require qi)
 
 ;; The basic way to write a flow is to use the ☯ form. A flow defined
