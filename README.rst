@@ -1,6 +1,6 @@
 qi-tutorial
 ===========
-An interactive tutorial for the `Qi language <https://docs.racket-lang.org/qi/index.html>`_, which can also serve as a template for a Racket project using Qi.
+An interactive tutorial for the `Qi language <https://docs.racket-lang.org/qi/index.html>`_, which can also serve as a starting point for a Racket application using Qi.
 
 Usage
 ~~~~~
