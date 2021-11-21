@@ -1,15 +1,13 @@
-qi-template
+qi-tutorial
 ===========
-A template for a Racket project using the `Qi language <https://docs.racket-lang.org/qi/index.html>`_.
-
-This template includes a short interactive tutorial to get you started.
+An interactive tutorial for the `Qi language <https://docs.racket-lang.org/qi/index.html>`_, which can also serve as a template for a Racket project using Qi.
 
 Usage
 ~~~~~
 
 ::
 
-   raco new qi-template
+   raco new qi-tutorial
 
 You will need `Racket Templates <https://github.com/racket-templates/racket-templates>`_. To install it:
 
