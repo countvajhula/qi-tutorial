@@ -30,11 +30,11 @@ TBD.
 Emacs/Vim
 ---------
 
-Just open the file ``tutorial.rkt``, and read through it! The tutorial takes the form of comments interspersed with runnable examples, and you should evaluate each expression by sending it to the REPL. E.g. in Racket Mode, you might use ``C-x C-e`` to do this.
+Just open the file ``tutorial.rkt``, and read through it! The tutorial takes the form of comments interspersed with runnable examples, and you should evaluate each expression by sending it to the REPL. E.g. in `Racket Mode <https://www.racket-mode.com/>`_, you might use ``C-x C-e`` to do this.
 
 Using Symex.el
 ``````````````
-For Emacs users, I recommend using Symex (which interfaces with Racket Mode) if you are at all open to using modal editing. Full disclosure: I'm the author. But I originally wrote it precisely because I wanted a more convenient way to evaluate expressions and components of expressions while learning Lisp, making it a great fit to support this interactive style of learning. To give you an idea -- with single keystrokes, you can move back and forth and in and out of expressions and can always evaluate the indicated (sub)expression using ``e``.
+For Emacs users, I recommend using `Symex <https://github.com/countvajhula/symex.el>`_ (which interfaces with Racket Mode) if you are at all open to using modal editing. Full disclosure: I'm the author. But I originally wrote it precisely because I wanted a more convenient way to evaluate expressions and components of expressions while learning Lisp, making it a great fit to support this interactive style of learning. To give you an idea -- with single keystrokes, you can move back and forth and in and out of expressions and can always evaluate the indicated (sub)expression using ``e``.
 
 Symex isn't in any way necessary to using this tutorial, and if you already have a convenient way to evaluate expressions interactively, then that's all you need!
 
