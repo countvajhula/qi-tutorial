@@ -25,7 +25,25 @@ The tutorial is an evolving work, and more exercises and topics will be added ov
 DrRacket
 --------
 
-TBD.
+You can't evaluate individual expressions on demand out of the box with DrRacket, but there's a Quickscript that'll allow you to do that. Quickscripts are the standard means of extending DrRacket functionality. To install the script:
+
+1. Install `Quickscript <https://docs.racket-lang.org/quickscript/index.html>`_ (for the means to use quickscripts) and `Quickscript-extra <https://docs.racket-lang.org/quickscript/index.html#%28part._.Installing_scripts__.Quickscript_.Extra%29>`_ (for some useful tools and scripts)
+
+    ::
+
+      raco pkg install quickscript quickscript-extra
+
+2. Use the included url2script tool to install the ``select-send-sexpr`` quickscript. This script allows you to select and evaluate expressions on demand in a context-sensitive way.
+
+   1. First, copy the link to the `select-send-sexpr <https://gist.github.com/Metaxal/9f313c17269f9cbcc95f614385309fb8>`_ script (e.g. by right-clicking on it)
+
+   2. Paste it into this dropdown in DrRacket:
+
+    Scripts → url2script → Fetch script...
+
+   3. You may need to Scripts → Manage → Compile scripts before the script will take effect.
+
+And that's it! You should now be able to use ``Control-Shift-Enter`` to evaluate expressions as you go through the tutorial. The script also provides other features, including ``Control-Enter`` to select the current expression in case you need to copy it. These keybindings are customizable.
 
 Emacs/Vim
 ---------
