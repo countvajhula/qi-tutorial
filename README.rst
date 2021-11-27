@@ -25,13 +25,13 @@ The tutorial is an evolving work, and more exercises and topics will be added ov
 DrRacket
 --------
 
-You can't evaluate individual expressions on demand out of the box with DrRacket, but there's a Quickscript that'll allow you to do that. Quickscripts are the standard means of extending DrRacket functionality. To install the script:
+You can't evaluate individual expressions on demand out of the box with DrRacket, but there's a Quickscript that'll allow you to do that. `Quickscripts <https://docs.racket-lang.org/quickscript/index.html>`_ are the standard means of extending DrRacket functionality, and the package is already included in recent DrRacket distributions. You just need to install the interaction script, for which these are the steps:
 
-1. Install `Quickscript <https://docs.racket-lang.org/quickscript/index.html>`_ (for the means to use quickscripts) and `Quickscript-extra <https://docs.racket-lang.org/quickscript/index.html#%28part._.Installing_scripts__.Quickscript_.Extra%29>`_ (for some useful tools and scripts)
+1. Install `Quickscript-extra <https://docs.racket-lang.org/quickscript/index.html#%28part._.Installing_scripts__.Quickscript_.Extra%29>`_, which contains useful scripts and tools, one of which we will need.
 
     ::
 
-      raco pkg install quickscript quickscript-extra
+      raco pkg install quickscript-extra
 
 2. Use the included url2script tool to install the ``select-send-sexpr`` quickscript. This script allows you to select and evaluate expressions on demand in a context-sensitive way.
 
@@ -39,7 +39,7 @@ You can't evaluate individual expressions on demand out of the box with DrRacket
 
    2. Paste it into this dropdown in DrRacket:
 
-    Scripts → url2script → Fetch script...
+      Scripts → url2script → Fetch script...
 
    3. You may need to Scripts → Manage → Compile scripts before the script will take effect.
 
