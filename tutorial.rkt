@@ -22,8 +22,23 @@
 ;; ... where underscores can be used to indicate argument positions.
 ((☯ (string-append "a" _ "c")) "b")
 
+;; You can use flows anywhere that you would normally use a function
+;; (since flows are just functions). As an example, if you wanted to
+;; double every element in a list of numbers, you could use:
+(map (☯ (* 2)) (range 10))
+
+;; ... rather than use currying:
+(require racket/function)
+(map (curry * 2) (range 10))
+
+;; ... or the naive approach using a lambda:
+(map (λ (v) (* v 2)) (range 10))
+
+;; Flows are often more clear than using currying, and can also be
+;; preferable to using a lambda in many cases.
+
 ;; Literals are interpreted as flows generating them.
-((☯ "hello") 3)
+((☯ "hello"))
 
 ;; More generally, you can generate the result of any Racket expression
 ;; as a flow by using `gen` (short for generate or "genesis" - to create
@@ -32,7 +47,8 @@
 
 ;; Flows like these that simply generate values always disregard any
 ;; inputs you pass in.
-((☯ (gen (+ 3 5))) "a" "b" 1 2 3)
+((☯ "hello") 3)
+((☯ (gen (+ 3 5))) "a" "b" 'hi 1 2 3)
 
 ;; `gen` is a common way to incorporate any Racket expression into a
 ;; flow.
@@ -46,14 +62,14 @@
 ;; with different inputs in different cases. As flows evaluate to
 ;; ordinary functions, we can name them the same way as any other
 ;; function.
-(define add2 (☯ (+ 2)))
-(add2 5)
+(define double (☯ (* 2)))
+(double 5)
 
 ;; But Qi also provides a dedicated flow definition form so you can be
 ;; more explicit that you are defining a flow, and then you don't need to
 ;; use ☯.
-(define-flow also-add2 (+ 2))
-(also-add2 5)
+(define-flow also-double (* 2))
+(also-double 5)
 
 ;; Values can be "threaded" through multiple flows in sequence.
 ((☯ (~> sqr add1)) 3)
@@ -62,8 +78,8 @@
 ((☯ (~> + sqr add1)) 3 5)
 
 ;; In Racket, if we wanted to evaluate an expression in terms of some
-;; inputs, we could wrap it in a lambda that we immediately apply to
-;; arguments:
+;; inputs, we could wrap the expression in a lambda and immediately apply
+;; it to those input arguments:
 ((λ (x y)
    (add1 (sqr (+ x y))))
  3 5)
@@ -172,7 +188,8 @@
 ;; With Qi prisms, though, △ and ▽ are different forms that do different
 ;; things.  △ separates, and ▽ collects. Therefore, they have a different
 ;; effect when swapped, and, for instance, this would be an error:
-((☯ (~> △ ▽)) 1 2 3)
+
+;; ((☯ (~> △ ▽)) 1 2 3)
 
 ;; ... because △ cannot "separate" what is already separated - it expects
 ;; a single input list.
@@ -200,6 +217,16 @@
 
 ;; This answers whether the input is a positive integer divisible by 3,
 ;; which, in this case, it is.
+
+;; As with any flow, we can give it a name. In practice, this is an
+;; elegant way to define predicates.
+(define-flow threeish?
+  (and positive?
+       integer?
+       (~> (remainder 3) (= 0))))
+
+(threeish? 27)
+(threeish? 32)
 
 ;; We often use predicates in conditional expressions such as `if` or
 ;; `cond`.  Since this pattern is so common, Qi provides a dedicated
