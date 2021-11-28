@@ -1,7 +1,49 @@
 #lang racket
 
-;; Welcome to the interactive Qi tutorial!
+;;;;; Welcome to the interactive Qi tutorial!
 ;;
+;;
+;;                        .,ad88888888baa,
+;;                    ,d8P"""        ""9888ba.
+;;                 .a8"          ,ad88888888888a
+;;                aP'          ,88888888888888888a
+;;              ,8"           ,88888888888888888888,
+;;    .d88     ,8'            (888888888( )888888888,    88b.
+;;   d88P"    ,8'             `8888888888888888888888    "Y88b
+;;  d88P      8)               `888888888888888888888,     Y88b
+;;  888       8                  "8888888888888888888)      888
+;;  888       8                   `888888888888888888)      888
+;;  Y88b      8)                    "8888888888888888      d88P
+;;   Y88b.    (b                     "88888888888888'    .d88P
+;;    "Y88    `8,        (8)          8888888888888)     88P"
+;;             "8a                   ,888888888888)
+;;               V8,                 d88888888888"
+;;                `8b,             ,d8888888888P'
+;;                  `V8a,       ,ad8888888888P'
+;;                     ""88888888888888888P"
+;;                          """"""""""""
+;;
+;;
+;;
+;;                         (ASCII Art Credit: Normand Veilleux)
+
+;;;; Introduction.
+;;
+;; This is your starting point for all of the tutorial materials in
+;; this repo. The tutorial is structured as an ordinary Racket module,
+;; with explanatory comments interspersed with runnable examples.
+;; General tips worth remembering are highlighted using the 👉 symbol.
+;; Just read through the file and evaluate each example, and experiment
+;; on your own to confirm your understanding and build fluency. Don't
+;; hesitate to make notes right in the file – these notes will be a
+;; record of your learning process and can serve as a useful reference
+;; for you later.  If you haven't already, make sure you read the tips in
+;; the README on optimizing the learning experience for your editor of
+;; choice.
+;;
+;; Have fun!
+
+
 ;; Qi is a general-purpose functional language, but it isn't a #lang,
 ;; it's just a library. You can use it in any module just by:
 
@@ -34,7 +76,7 @@
 ;; ... or the naive approach using a lambda:
 (map (λ (v) (* v 2)) (range 10))
 
-;; Flows are often more clear than using currying, and can also be
+;; 👉 Flows are often more clear than using currying, and can also be
 ;; preferable to using a lambda in many cases.
 
 ;; Literals are interpreted as flows generating them.
@@ -50,7 +92,7 @@
 ((☯ "hello") 3)
 ((☯ (gen (+ 3 5))) "a" "b" 'hi 1 2 3)
 
-;; `gen` is a common way to incorporate any Racket expression into a
+;; 👉 `gen` is a common way to incorporate any Racket expression into a
 ;; flow.
 
 ;; When an underscore is used as a flow (rather than in an argument
@@ -126,8 +168,9 @@
 ;; also as it can be thought of as transforming or "amplifying" the
 ;; inputs under some flow.
 
-;; Flows compose naturally, so that the entire Qi language is available
-;; to describe each flow when used within another flow.
+;; 👉 Flows compose naturally, so that the entire Qi language is
+;; available to describe each flow when used within another flow.
+
 (☯ (~> (-< sqr (* 2) 1) +))
 
 ;; What do you think this flow computes? Take a minute to study it, see
@@ -194,8 +237,9 @@
 ;; ... because △ cannot "separate" what is already separated - it expects
 ;; a single input list.
 
-;; △ and ▽ often allow you to avoid using `list` and `apply`. For
-;; instance:
+;; 👉 △ and ▽ often allow you to avoid using `list` and `apply`.
+
+;; For instance:
 (~>> ((list 3 4 5)) (map sqr) (apply +))
 
 ;; This flow computes the sum of the squares of three values. We use map
@@ -218,7 +262,7 @@
 ;; This answers whether the input is a positive integer divisible by 3,
 ;; which, in this case, it is.
 
-;; As with any flow, we can give it a name. In practice, this is an
+;; 👉 As with any flow, we can give it a name. In practice, this is an
 ;; elegant way to define predicates.
 (define-flow threeish?
   (and positive?
