@@ -18,7 +18,7 @@ You will need `Racket Templates <https://github.com/racket-templates/racket-temp
 Usage
 ~~~~~
 
-This tutorial is structured as a Racket module called ``tutorial.rkt``. Just open this file in your favorite editor, read through the comments, and evaluate each expression as you go. If it works and you think you understand it, try variations and experiments at each stage to gain fluency. Don't hesitate to write code and notes right in the module -- these track your learning and can be useful to refer to later. Remember that writing isn't just a way to express your thoughts, it's also a way to learn. So, go wild!
+This tutorial is structured as a set of Racket modules. Just open the ``start.rkt`` module in your favorite editor to get started. Go through the tutorial by reading through the comments, and evaluating each expression as you go. If it works and you think you understand it, try variations and experiments at each stage to gain fluency. Don't hesitate to write code and notes right in the module -- these track your learning and can be useful to refer to later. Remember that writing isn't just a way to express your thoughts, it's also a way to learn. So, go wild!
 
 The tutorial is an evolving work, and more exercises and topics will be added over time. Pull requests are welcome.
 
@@ -48,7 +48,7 @@ And that's it! You should now be able to use ``Control-Shift-Enter`` to evaluate
 Emacs/Vim
 ---------
 
-Just open the file ``tutorial.rkt``, and read through it! The tutorial takes the form of comments interspersed with runnable examples, and you should evaluate each expression by sending it to the REPL. E.g. in `Racket Mode <https://www.racket-mode.com/>`_, you might use ``C-x C-e`` to do this.
+Just open the file ``start.rkt``, and read through it! The tutorial takes the form of comments interspersed with runnable examples, and you should evaluate each expression by sending it to the REPL. E.g. in `Racket Mode <https://www.racket-mode.com/>`_, you might use ``C-x C-e`` to do this.
 
 Using Symex.el
 ``````````````
