@@ -157,3 +157,13 @@
 ;; Solution:
 (define (reproduce n vs)
   ((☯ (feedback n mitosis)) vs))
+
+(reproduce 3 (list 1 2 3))
+
+;; Well that's great, but there's no "genetic variation" here across multiple
+;; generations. Let's mix things up a bit!
+
+;; "Meiosis"
+
+;; TODO: this exercise is in development and will be expanded over time.
+;; Check back again soon :)

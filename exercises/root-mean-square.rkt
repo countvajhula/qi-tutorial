@@ -77,5 +77,5 @@
   (~> (-< (~> △ (>< sqr) +)
           length) / sqrt))
 
-;; 👉️ A nested application of a function can always be turned into a sequential
+;; 👉️ Nested function application can always be turned into a sequential
 ;; flow.
