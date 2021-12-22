@@ -948,8 +948,8 @@ Part IV.
 Things are mysteriously calm in the interior of the mountain. Boulders
 and walls shift and change before their very eyes, but it seems almost
 normal, somehow, like they're on the verge of finding something out
-that'll make sense out of all of this. Entire gaping caverns come and
-go around them, and they look at each other with increasing calm.
+that'll make sense of all of this. Entire gaping caverns come and go
+around them, and they look at each other with increasing calm.
 
 "I have it," Sridhara says at last, and everyone looks at him. "It's
 too complicated to explain. I'll just let you _see_ it. Let me think,
