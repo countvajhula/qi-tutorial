@@ -8,7 +8,7 @@ JOURNEY TO THE HEART OF MOUNT MERU
 Thunder rolled through the walls like waves in a large pond that reach
 one end and come back again the other way, intersecting and repeating,
 never quite the same. The rumbling cascaded and repeated and
-attenuated until the next peel joined the subterranean
+attenuated until the next peal joined the subterranean
 chorus. Generations of philosophers had remarked on the unique quality
 of the sounds in this place, in these vast interconnected caverns in
 the interior of this particular mountain. The head monk opened his
