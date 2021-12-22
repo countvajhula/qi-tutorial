@@ -599,8 +599,8 @@ Save the monks and bring balance back to the mountain. Assume that the
 mountain needs to be centered within the display, and that the display
 is 80 characters wide. "You can use this formula," Sridhara adds,
 quickly scrawling out some notes on a piece of parchment, "each row
-needs to be offset from zero by a number of characters N = (max 0
-(floor (display-width - length-of-row) / 2)). The floor is to ensure
+needs to be offset from zero by a number of characters N = max(0,
+floor((display-width - length-of-row) / 2)). The floor is to ensure
 it's integer-valued, and the max is to ensure it doesn't go below
 zero. Here, take it, quick!"
 
