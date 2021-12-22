@@ -827,6 +827,7 @@ and outputs, go!
 3, 9 -> true
 3, 10 -> false
 
+Oh, and don't forget to parametrize `render-step`!
 |#
 
 ;; (Implementation here. Scroll down for a solution when you're ready)
