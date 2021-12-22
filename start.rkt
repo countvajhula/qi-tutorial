@@ -363,7 +363,15 @@
 ;; Qi provides lots of other forms that allow you to express flows
 ;; conveniently and elegantly in different contexts.
 
-;; To learn more, find complete docs at:
+;;; Next Steps
+
+;; To practice your skills and gain fluency with the language, try your
+;; hand at some of the exercises in the exercises/ folder. You can survey
+;; the available exercises and topics covered by starting at:
+;;
+;;    exercises/start.rkt
+;;
+;; Find complete docs at:
 ;;
 ;;    https://docs.racket-lang.org/qi/index.html
 ;;
