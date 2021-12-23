@@ -45,8 +45,8 @@ You can't evaluate individual expressions on demand out of the box with DrRacket
 
 And that's it! You should now be able to use ``Control-Shift-Enter`` to evaluate expressions as you go through the tutorial. The script also provides other features, including ``Control-Enter`` to select the current expression in case you need to copy it. These keybindings are customizable.
 
-Emacs/Vim
----------
+Emacs
+-----
 
 Just open the file ``start.rkt``, and read through it! The tutorial takes the form of comments interspersed with runnable examples, and you should evaluate each expression by sending it to the REPL. E.g. in `Racket Mode <https://www.racket-mode.com/>`_, you might use ``C-x C-e`` to do this.
 
@@ -55,6 +55,18 @@ Using Symex.el
 For Emacs users, I recommend using `Symex <https://github.com/countvajhula/symex.el>`_ (which interfaces with Racket Mode) if you are at all open to using modal editing. Full disclosure: I'm the author. But I originally wrote it precisely because I wanted a more convenient way to evaluate expressions and components of expressions while learning Lisp, making it a great fit to support this interactive style of learning. To give you an idea -- with single keystrokes, you can move back and forth and in and out of expressions and can always evaluate the indicated (sub)expression using ``e``.
 
 Symex isn't in any way necessary to using this tutorial, and if you already have a convenient way to evaluate expressions interactively, then that's all you need!
+
+Vim
+---
+
+For Vim users, I recommend using the `tmux-vim-demo <https://docs.racket-lang.org/tmux-vim-demo/index.html>`_ Racket package. This gives you a Vim buffer and a REPL (via tmux) side by side in a terminal window, allowing you to send expressions for evaluation on demand, using single keystrokes (e.g. ``r`` to send the current line or visual selection to the REPL). Once you have the package installed (along with its dependencies, including tmux), you'll need to add a header at the top of the file in order to use it with ``tmux-vim-demo``. Just change ``#lang racket`` to the following:
+
+::
+
+   #lang tmux-vim-demo
+   racket
+
+This tells ``tmux-vim-demo`` that this is a file whose contents are to be sent interactively to a tmux terminal session, and additionally, that the first command we will issue is ``racket`` in order to enter the Racket REPL that the remaining contents of the file will need.
 
 "License":
 ==========
