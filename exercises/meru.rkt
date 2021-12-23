@@ -591,9 +591,11 @@ That's right, and as narrator...!
 "Shhh, listen! Do you hear that...?" Halayudha held up a hand for
 silence. They stopped, motionless, and listened. It was
 unmistakable. A low creaking and a gentle rolling. The rocks seemed to
-be under a great strain. Halayudha panicked. "The lopsided weight
-distribution is compromising structural integrity! Evasive maneuvers!
-Er, excuse me, I mean, we need to get this mountain sorted out, stat!"
+be under a great strain.
+
+"The lopsided weight distribution is compromising structural
+integrity," Bharata panicked. "Evasive maneuvers! Er, excuse me, I
+mean, we need to get this mountain sorted out, stat!"
 
 Save the monks and bring balance back to the mountain. Assume that the
 mountain needs to be centered within the display, and that the display
@@ -781,11 +783,11 @@ and evidently unaware that anything unusual is afoot. "It's just as
 well," Hemachandra thinks to himself, "I don't want to have to explain
 _this_ to him just yet."
 
-Sridhara peeks out of a crevice and appears to be having a good time,
-and winks knowingly at Hemachandra. Bharata looks absorbed in trying
-to walk in midair and can be heard to be vehemently denying a sordid
-love affair with someone named Billie Jean over the sounds of the
-wind.
+Sridhara peeks out of a crevice and appears to be enjoying the
+proceedings, and winks knowingly at Hemachandra. Bharata looks
+absorbed in trying to walk in midair and can be heard to be vehemently
+denying a sordid love affair with someone named Billie Jean over the
+sounds of the wind.
 
 "Boy, you've really done it this time, Hema!" Halayudha glowers as he
 floats past.
