@@ -59,14 +59,15 @@ Symex isn't in any way necessary to using this tutorial, and if you already have
 Vim
 ---
 
-For Vim users, I recommend using the `tmux-vim-demo <https://docs.racket-lang.org/tmux-vim-demo/index.html>`_ Racket package. This gives you a Vim buffer and a REPL (via tmux) side by side in a terminal window, allowing you to send expressions for evaluation on demand, using single keystrokes (e.g. ``r`` to send the current line or visual selection to the REPL). Once you have the package installed (along with its dependencies, including tmux), you'll need to add a header at the top of ``start.rkt`` in order to use it with ``tmux-vim-demo``. Just change ``#lang racket`` to the following:
+For Vim users, I recommend using the `tmux-vim-demo <https://docs.racket-lang.org/tmux-vim-demo/index.html>`_ Racket package. This gives you a Vim buffer and a REPL (via tmux) side by side in a terminal window, allowing you to send expressions for evaluation on demand, using single keystrokes (e.g. ``r`` to send the current line or visual selection to the REPL). Once you have the package installed (along with its dependencies, including tmux), just create a file called ``runner.rkt`` (or use whatever name you like) in the root folder of the repo (i.e. the one containing this file and ``start.rkt``), with the following contents:
 
 ::
 
-   #lang tmux-vim-demo
-   racket
+  #lang racket
+  (require tmux-vim-demo)
+  (run-demo "Qi" "." "start.rkt" "racket" #f)
 
-This tells ``tmux-vim-demo`` that this is a file whose contents are to be sent interactively to a tmux terminal session, and additionally, that the first command we will issue is ``racket`` in order to enter the Racket REPL that the remaining contents of the file will need.
+Then, use ``racket runner.rkt`` at the command line to run the tutorial.
 
 "License":
 ==========
