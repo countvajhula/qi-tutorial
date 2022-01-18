@@ -67,13 +67,13 @@ was off the chain!"
 
 "That's enough, Sri. Look, apparently the townsfolk are growing
 impatient that we've promised them answers for so long and haven't had
-anything to show for it since guruji's glory days. As you can imagine,
-he's.. a little upset, by the lack of faith, as anyone would be,"
-Halayudha explained.
+anything to show for it since guruji's glory days," Halayudha
+explained. "As you can imagine, he's.. a little upset, by the lack of
+faith, as anyone would be."
 
 "Uh huh." Bharata listened. "You guys wanna dance?"
 
-"What? No!" Halayudha looked exasperated. "Look, let's get some things
+"What? No!" Halayudha replied, exasperated. "Look, let's get some things
 figured out first, and we can dance later, okay?"
 
 "Ah, sure. How can I help?" Bharata smiled.
@@ -93,7 +93,7 @@ poetry. "And dance!" interjects Bharata, breaking the fourth wall. Oh
 right, also the best dances. "Are you going to tell them about rose
 petals?" Yes, yes, in due time. Pipe down, Hemachandra! "k whatevs."
 
-The possible combinations of syllable types adding up to 3 syllables
+The possible permutations of syllable types adding up to 3 syllables
 are:
 
 SSS
@@ -109,12 +109,12 @@ which we could think of as a binary enumeration of bits with 0s and 1s.
 
 What Pingala had figured out in his youth is that if you had N
 syllables total to work with and you wanted to know how many subsets
-of K syllables you could make from these, that you could find the
-answer using a simple tabulation. First, you draw a single small
-square. Then, two squares below that, each halfway offset on either
-side of the one above so that they form a triangle. Then add three
-squares below that, extending the triangle in the same way, and so
-on. Fill the top square with the number 1, and each of the squares
+or "combinations" of K syllables you could make from these, that you
+could find the answer using a simple tabulation. First, you draw a
+single small square. Then, two squares below that, each halfway offset
+on either side of the one above so that they form a triangle. Then add
+three squares below that, extending the triangle in the same way, and
+so on. Fill the top square with the number 1, and each of the squares
 below that with the sum of the two numbers above it. By considering
 each square to correspond to a particular value of N and K, increasing
 downwards and to the right, respectively, the value contained in the
@@ -443,6 +443,10 @@ print 24 rows.
 (meru 24)
 
 #|
+A distant sound was audible and the minuscule reverberations tickled
+their feet. "Quite a storm out there, huh?" Halayudha looked
+searchingly towards the door.
+
 "Okay, great, now that we're all caught up," Hemachandra snapped,
 "there's something that's always bugged me about this. Look at those
 little boulders that make up the mountain - why are they shaped like
@@ -453,7 +457,7 @@ _that_? The real boulders we're surrounded by are circular, more like
 of the problem." Sridhara said, dismissively.
 
 "Fine, let's just do things the old way and get nowhere, then,"
-Hemachandra retorted.
+retorted Hemachandra.
 
 "Alright look, it's fine, it's not a big deal," interjected Halayudha
 hastily. "Hema wants boulders, let's do boulders. No big deal, okay?"
@@ -783,8 +787,8 @@ and evidently unaware that anything unusual is afoot. "It's just as
 well," Hemachandra thinks to himself, "I don't want to have to explain
 _this_ to him just yet."
 
-Sridhara peeks out of a crevice and appears to be enjoying the
-proceedings, and winks knowingly at Hemachandra. Bharata looks
+Sridhara peeks out of a crevice, surveying the proceedings with a
+smile on his face, and winks knowingly at Hemachandra. Bharata looks
 absorbed in trying to walk in midair and can be heard to be vehemently
 denying a sordid love affair with someone named Billie Jean over the
 sounds of the wind.
