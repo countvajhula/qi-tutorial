@@ -2,7 +2,7 @@ qi-tutorial
 ===========
 An interactive tutorial for the `Qi language <https://docs.racket-lang.org/qi/index.html>`_.
 
-.. contents:: :depth: 3
+.. contents:: :depth: 2
 
 Installation
 ~~~~~~~~~~~~
