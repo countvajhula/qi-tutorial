@@ -225,7 +225,7 @@ Write a flow `meru` that accepts a number N as input and produces the
 Nth row of the triangle.
 
 E.g.:
-3 ->
+2 ->
 1, 2, 1
 
 6 ->
