@@ -27,11 +27,55 @@
 ;;
 ;;                         (ASCII Art Credit: Normand Veilleux)
 
-;;;; Introduction.
 ;;
 ;; This is your starting point for all of the tutorial materials in
-;; this repo. The tutorial is structured as an ordinary Racket module,
-;; with explanatory comments interspersed with runnable examples.
+;; this repo. The tutorial is structured as ordinary Racket modules,
+;; with runnable examples interspersed with explanatory comments.
+
+;;;; GUIDE
+;;
+                               .:                                 .:.
+
+                    .:........
+    ..           .:^~!!~~!!!!!!!!!~~~~~!~~~^^^.           ..
+    ..         :^~!!!!!777777??????JJJYYYYYYYJ:           ..
+               .^^~!!777777777???JJJ?JJYYYYY5J:
+                 .:~~!!!!!!7777???77???JJJJJY?.
+                    .::::::::::::::::::??:::::          .....     .:.
+                                ....:::77:^^^^^~~~~~~~~~!!!!~^:.   ..
+                                ~JJJJJJJJJJJ???????7777777777!~~~::
+                                ^J5YYYYYYYJJJJJ???777777777!!!!!~^:
+    ::                ::        ^JYYYYJJJJJJJ??????7777!!!~!!~~:.
+                                .~~~~~~J?^^^^^^^^^^^^^^:::::::
+                  .....................77 .  .
+               .:^~!!!!!!!!!77777777???JJ?????!                    .
+            .:^~!!7777777777?????JJJJJYYYYYY5Y!                   .:.
+            .^^~!!77777777777???JJJJJJJJYYYYYY7
+              .:^~!!!!!!!!!!77777777777J?!!!!!~
+                 .:::::::..........   .7?.         .......::..
+                                 ~77777JJ77!!!!!!!!!!!!!!!!!!~^:
+                                 7Y5YYYYYYYJJJ??????7777777777!!~^:
+                                 7YYYYYYYJJJJJJJ??7!!7777777777!!~~:
+             .:.                .!?????JJ??????77!!7777!!!!!!!~^:.
+                                     ..?7....::..:::::::::::^:.
+                                       !!
+                                       !7                                   .
+                                       !7                                  .:.
+                                       !7
+                                       !7
+             ..                ..      !7
+             ..                ..      !7
+                                       !7
+                                       !7
+    .:                                 !7.               .:.
+    ..                               .:?J:                .
+                                .....:^^!~:.....
+
+
+;; The present module is an introduction to Qi.
+;; The exercises/ folder contains exercises to hone your skills
+;; after you've gone through the tutorial.
+
 ;; General tips worth remembering are highlighted using the 👉 symbol.
 ;; Just read through the file and evaluate each example, and experiment
 ;; on your own to confirm your understanding and build fluency. Don't
@@ -43,6 +87,7 @@
 ;;
 ;; Have fun!
 
+;;;; INTRODUCTION TO QI
 
 ;; Qi is a general-purpose functional language, but it isn't a #lang,
 ;; it's just a library. You can use it in any module just by:
@@ -363,7 +408,7 @@
 ;; Qi provides lots of other forms that allow you to express flows
 ;; conveniently and elegantly in different contexts.
 
-;;; Next Steps
+;;;; NEXT STEPS
 
 ;; To practice your skills and gain fluency with the language, try your
 ;; hand at some of the exercises in the exercises/ folder. You can survey
