@@ -307,8 +307,8 @@
 ;; This answers whether the input is a positive integer divisible by 3,
 ;; which, in this case, it is.
 
-;; 👉 As with any flow, we can give it a name. In practice, this is an
-;; elegant way to define predicates.
+;; 👉 As with any flow, we can give this one a name. In practice, this is
+;; an elegant way to define predicates.
 (define-flow threeish?
   (and positive?
        integer?
@@ -382,7 +382,7 @@
 ((☯ ⏚) 3 4 5)
 
 ;; This produces no values at all, and is useful in complex flows where
-;; we may desire to end certain branches of the flow based on predicates
+;; we may wish to end certain branches of the flow based on predicates
 ;; or some other criteria. As an example, the following flow sums all
 ;; input numbers that are greater than 3.
 ((☯ (~> (>< (if (> 3) _ ⏚))
@@ -390,11 +390,12 @@
 
 ;; ... which uses a flow version of `if` where the condition, consequent,
 ;; and alternative expressions are all flows operating on the inputs. We
-;; could use a switch too, of course, but `if` is simpler here.
-
-;; As with any complex language, there are many ways of saying the same
-;; thing.  We could have done this computation in any number of other
-;; ways. We did it this way here just to illustrate what ⏚ does.
+;; could use a switch too, of course, but `if` is simpler here. As is the
+;; case with any complex language, there are many ways of saying the same
+;; thing in Qi. In this particular case, as it happens, Qi has a more
+;; convenient shorthand, @racket[pass], which only allows values through
+;; that meet some criterion.
+((☯ (~> (pass (> 3)) +)) 1 3 5 2 7)
 
 ;; We've now learned about the ☯, on, ~>, and switch forms, which are
 ;; ways to enter the Qi language. We've learned many of the forms of the
