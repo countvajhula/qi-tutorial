@@ -380,7 +380,7 @@ see."
 (meru 24)
 
 #|
-"So in the render function," he continued, "let's just print a *
+"So in the rendering function," he continued, "let's just print a *
 symbol instead, if the number happens to be odd, and a space if it's
 even. That should help us see things a bit more clearly."
 
@@ -443,7 +443,7 @@ print 24 rows.
 (meru 24)
 
 #|
-A distant sound was audible and the minuscule reverberations tickled
+A distant sound was audible, and minuscule reverberations tickled
 their feet. "Quite a storm out there, huh?" Halayudha looked
 searchingly towards the door.
 
