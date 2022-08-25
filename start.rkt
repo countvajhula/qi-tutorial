@@ -214,7 +214,7 @@
 ;; inputs under some flow.
 
 ;; 👉 Flows compose naturally, so that the entire Qi language is
-;; available to describe each flow when used within another flow.
+;; available to define each flow component within a larger flow.
 
 (☯ (~> (-< sqr (* 2) 1) +))
 
@@ -241,12 +241,12 @@
 ;; but it has a few advantages: it doesn't mention the input value at
 ;; all, while the Racket version mentions it 3 times. It's shorter. And
 ;; most importantly, it encodes more information about the computation
-;; syntactically than the Racket version does. In what way? See, with the
-;; Racket version, you don't know what the expression is about to do with
+;; syntactically than the Racket version does. In what way? Well, with the
+;; Racket version, we don't know what the expression is about to do with
 ;; the input value.  It might transform it, or it might condition on it,
-;; or it might disregard it altogether. You need to _read_ the entire
+;; or it might disregard it altogether. We need to _read_ the entire
 ;; expression to determine the type of computation. With the Qi version,
-;; you can see that it is a transformation just by looking.
+;; we can see that it is a sequential transformation just by looking.
 
 ;; Since we often work with lists in Racket, whereas we usually work with
 ;; values in Qi, it is sometimes useful to separate an input list into
@@ -349,12 +349,13 @@
 
 ;; ... which also reveals how the switch form is just like ~> in that it
 ;; is just a form of the Qi language. Since it represents another common
-;; case, Qi provides a shorthand `switch` form that you can use at the
-;; Racket level alongside forms like `cond`, without having to enter Qi
-;; via ☯.
+;; case, Qi provides the shorthand `switch` form that we used above,
+;; which can be used at the Racket level alongside forms like `cond`,
+;; without having to enter Qi via ☯.
 
-;; That's one way to give this flow a name. Another way is to use the
-;; dedicated define-switch form provided by Qi, which is more explicit:
+;; Using define is one way to give this flow a name. Another way is to
+;; use the dedicated define-switch form provided by Qi, which is more
+;; explicit:
 (define-switch amplify-too
   [positive? add1]
   [negative? sub1]
@@ -375,7 +376,7 @@
   [< (~> X -)])
 
 ;; The X or "crossover" form used here reverses the order of the inputs,
-;; and ensures that the larger argument is passed to the subtract
+;; and ensures here that the larger argument is passed to the subtract
 ;; operation in the first position.
 
 ;; Finally, we can end flows by using the `ground` form.
