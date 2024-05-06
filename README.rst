@@ -24,6 +24,13 @@ This tutorial is structured as a set of Racket modules. Just open the ``start.rk
 
 The tutorial is an evolving work, and more exercises and topics will be added over time. Pull requests are welcome.
 
+☯ and Other Unicode Characters
+------------------------------
+
+There are many ways to conveniently enter ☯ and other unicode symbols used in Qi, depending on your editor. This page `discusses some options <https://docs.racket-lang.org/qi/Flowing_with_the_Flow.html>`__.
+
+You can also just use the English equivalents, such as `flow` (☯), `sep` (△) and `collect` (▽), if you prefer.
+
 DrRacket
 --------
 
@@ -73,4 +80,5 @@ Then, use ``racket runner.rkt`` at the command line to run the tutorial.
 
 "License"
 ~~~~~~~~~
+
 This work is "part of the world." You are free to do whatever you like with it and it isn't owned by anybody, not even the creators. Attribution would be appreciated and would help, but it is not strictly necessary nor required. If you'd like to learn more about this way of doing things and how it could lead to a peaceful, efficient, and creative world (and how you can be involved), visit `drym.org <https://drym.org>`_.
